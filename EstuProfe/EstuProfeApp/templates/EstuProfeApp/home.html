@@ -1,5 +1,45 @@
-<html>
-    <body>
-        Home
-    </body>
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    {% load static %}
+
+  <meta charset="UTF-8">
+  <title>EstuProfe - Inicio de sesion</title>
+  <link rel='stylesheet'><link rel="stylesheet" href=" {% static 'EstuProfeApp/css/style_login.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="login-form">
+     <h1>EstuProfe</h1>
+     <h2>Inicio de sesion</h2>
+     <p></p>
+     <div class="form-group ">
+       <input type="text" class="form-control" placeholder="Usuario " id="UserName">
+       <i class="fa fa-user"></i>
+     </div>
+     <p></p>
+     <div class="form-group log-status">
+       <input type="password" class="form-control" placeholder="Contraseña " id="Passwod">
+       <i class="fa fa-lock"></i>
+     </div>
+      <span class="alert">Invalid Credentials</span>
+      <div class="sesion__buttons">
+        <div class="sesion__buttons__create">
+            <button onclick=" location.href='{% url 'CrearCuenta' %}'"  class="button-17">Crear cuenta</button>
+        </div>
+        <div class="sesion__buttons__sign">
+            <button class="button-17">Iniciar sesion</button>
+        </div>                    
+    </div>
+     
+     
+    
+   </div>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
 </html>

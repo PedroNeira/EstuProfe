@@ -11,4 +11,6 @@ def perfil(request):
 
 def publicaciones(request):
     return render(request,"EstuProfeApp/publicaciones.html")
+def crearCuenta(request):
+    return render(request,"EstuProfeApp/createAcount.html")
 
